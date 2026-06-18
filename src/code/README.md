@@ -9,7 +9,7 @@ icon: fa6-solid:code
 代码编程的学习路径：
 
 - 编程语言：[TypeScript](https://www.typescriptlang.org/zh/)，[JavaScript](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript)
-- 相关基础知识：HTML，Markdown，MySQL，正则表达式
+- 相关基础知识：HTML，Markdown，MySQL，正则表达式 php
 - 脚本/开发工具：AutoHotkey，Electron
 
 - 前端框架：[Vue.js](https://cn.vuejs.org/)，[React](https://zh-hans.react.dev/)
