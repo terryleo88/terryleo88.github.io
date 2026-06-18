@@ -7,7 +7,7 @@ export default sidebar({
     "/DailyRoutine",
     "/Fitness",
     // 读书笔记架构更换到 docsify，不能使用相对链接
-    { text: "读书笔记", icon: "fa6-brands:readme", link: "https://newzone.top/reading/" },
+    { text: "读书笔记", icon: "fa6-brands:readme", link: "https://terryleo88.github.io/reading/" },
     // 指定显示页面
     {
       text: "🧰 应用手册",
@@ -99,15 +99,4 @@ export default sidebar({
   ],
   // 专题区（独立侧边栏）
   "/apps/topic/": "structure",
-  // 如果你不想使用默认侧边栏，可以按照路径自行设置。但需要去掉下方配置中的注释，以避免博客和时间轴出现异常。_posts 目录可以不存在。
-  /*"/_posts/": [
-    {
-      text: "博客文章",
-      icon: "fa6-solid:feather-pointed",
-      prefix: "",
-      link: "/blog",
-      collapsible: true,
-      children: "structure",
-    },
-  ], */
 });

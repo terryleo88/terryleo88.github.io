@@ -16,7 +16,7 @@ jobs:
       FTP_HOST: ${{ secrets.ftp_host }}
     steps:
       - name: Checkout 🛎️
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           # 获取所有标记和分支的所有历史记录（updatetime 必须，否则每次都会变化）
           fetch-depth: 0
@@ -24,15 +24,15 @@ jobs:
           # submodules: true
 
       - name: Install pnpm
-        uses: pnpm/action-setup@v4
+        uses: pnpm/action-setup@v6
         with:
-          version: 9
+          version: 10
           run_install: true
 
       - name: Setup Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v6
         with:
-          node-version: 20
+          node-version: 24
           cache: pnpm
 
       # 复制读书笔记到静态页面路径，并构建页面
@@ -40,23 +40,23 @@ jobs:
         env:
           NODE_OPTIONS: --max_old_space_size=8192
         run: |-
-          pnpm cpx "docs/reading/**" docs/.vuepress/public/reading
+          pnpm cpx "src/reading/**" src/.vuepress/public/reading
           pnpm run docs:build
-          > docs/.vuepress/dist/.nojekyll
+          > src/.vuepress/dist/.nojekyll
 
       - name: Deploy GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           # 指定静态文件部署到的分支
           branch: gh-pages
-          folder: docs/.vuepress/dist
+          folder: src/.vuepress/dist
 
       # 如果配置了 FTP 服务器密钥，才会执行本步骤，将页面静态文件同步到服务器
       - name: 📂 Sync files
         if: env.FTP_HOST != ''
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.6
         with:
-          local-dir: docs/.vuepress/dist/
+          local-dir: src/.vuepress/dist/
           server: ${{ secrets.ftp_host }}
           username: ${{ secrets.ftp_username }}
           password: ${{ secrets.ftp_password }}
