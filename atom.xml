@@ -1,20 +1,20 @@
-<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xsl" href="https://newzone.top/atom.xsl"?>
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xsl" href="https://terryleo88.github.io/atom.xsl"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN">
-  <id>https://newzone.top/</id>
-  <title>LearnData 开源笔记</title>
-  <subtitle>开源工具、效率方法、心理学探索的自我提升笔记，记录并输出一切能让自己提升的知识。</subtitle>
-  <icon>https://newzone.top/favicon.ico</icon>
-  <updated>2025-02-28T09:06:02.588Z</updated>
+  <id>https://terryleo88.github.io/</id>
+  <title>terryleo88 开源笔记</title>
+  <subtitle>开源工具、效率方法、自我提升笔记</subtitle>
+  <icon>https://terryleo88.github.io/favicon.ico</icon>
+  <updated>2026-06-18T14:35:17.294Z</updated>
   <generator>@vuepress/plugin-feed</generator>
-  <link rel="self" href="https://newzone.top/atom.xml"/>
-  <link rel="alternate" href="https://newzone.top/"/>
+  <link rel="self" href="https://terryleo88.github.io/atom.xml"/>
+  <link rel="alternate" href="https://terryleo88.github.io/"/>
   <category term="工具"/>
   <category term="使用指南"/>
   <entry>
     <title type="text">博客文章样例 2</title>
-    <id>https://newzone.top/posts/2024-03-02-blog_example2.html</id>
-    <link href="https://newzone.top/posts/2024-03-02-blog_example2.html"/>
-    <updated>2025-01-27T13:49:58.000Z</updated>
+    <id>https://terryleo88.github.io/posts/2024-03-02-blog_example2.html</id>
+    <link href="https://terryleo88.github.io/posts/2024-03-02-blog_example2.html"/>
+    <updated>2026-06-18T14:34:28.000Z</updated>
     <summary type="html"><![CDATA[<p>博客文章内容，支持 Markdown 和 HTML 语言。</p>
 ]]></summary>
     <content type="html"><![CDATA[<p>博客文章内容，支持 Markdown 和 HTML 语言。</p>
@@ -24,9 +24,9 @@
   </entry>
   <entry>
     <title type="text">博客文章样例</title>
-    <id>https://newzone.top/posts/2024-03-01-blog_example.html</id>
-    <link href="https://newzone.top/posts/2024-03-01-blog_example.html"/>
-    <updated>2025-01-27T13:49:58.000Z</updated>
+    <id>https://terryleo88.github.io/posts/2024-03-01-blog_example.html</id>
+    <link href="https://terryleo88.github.io/posts/2024-03-01-blog_example.html"/>
+    <updated>2026-06-18T14:34:28.000Z</updated>
     <summary type="html"><![CDATA[<p>博客文章内容，支持 Markdown 和 HTML 语言。</p>
 ]]></summary>
     <content type="html"><![CDATA[<p>博客文章内容，支持 Markdown 和 HTML 语言。</p>
